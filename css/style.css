@@ -3,6 +3,7 @@
     font-size: small;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 body {
@@ -42,17 +43,16 @@ body {
 .btn {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #6161611c;
-    color: #D0C3C3;
+   background:transparent;
+   color: white;
     border: none;
     border-radius: 30px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    fill: rgba(217, 217, 217, 0.05);
-    box-shadow: rgba(10, 10, 0, 0.15) 0px 3px 3px 0px;
-}
+    backdrop-filter: blur(20px);
+ }
 
 .home {
     min-height: 100vh;
@@ -289,7 +289,7 @@ footer section {
     align-items: center;
 }
 
-@media (max-width:796px) {
+@media (max-width:960px) {
     .navbar.menu {
         display: flex;
         justify-content: center;
@@ -342,14 +342,14 @@ footer section {
     }
     .flexer .lady{
         width:90%;
-        margin-top: 100px;
+        margin-top: 10%;
         border-radius: 15px;
     }
 
 }
 
 @media (max-width:425px) {
-    .navbar {
+    /* .navbar {
         position: relative;
     }
 
@@ -357,15 +357,15 @@ footer section {
         position: absolute;
         top: 4em;
         right: 10%;
-    }
+    } */
 
-    .newscontenu {
+    /* .newscontenu {
         margin-top: 5em;
         width: 100%;
         display: block;
         left: 0;
         top: 0;
-    }
+    } */
 
     .news {
         text-align: center;
@@ -399,11 +399,17 @@ footer section {
     }
 }
 
+
+
 @media (max-width:768px) {
     .PIC {
         width: 90%;
         height: auto;
 
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .profil2 {
@@ -436,6 +442,33 @@ footer section {
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0);
     transition: box-shadow 0.3s ease;
+}
+
+
+.menu3{
+    margin-top: 30px;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    display: none;
+    text-align: center;
+    transition: 0.3s;
+    background-color: #1813159f;
+}
+.sidemenu:hover .menu3{
+    left: 0;
+    display: block;
+}
+.menu3 a{
+    padding: 20px;
+    display: block;
+}
+.menu3 a:hover{
+    background-color: #951a1a;
+}
+
+.menu3 .btn{
+    font-size: 20px;
 }
 
 .sidebar {
@@ -661,7 +694,9 @@ footer section {
 .gap {
     gap: 10px;
 }
-
+.sidemenu{
+    display: none;
+}
 .newscontenu {
     display: flex;
     flex-direction: column;
@@ -848,8 +883,42 @@ footer section {
     .col.m3{
         width: 50%;
     }
+    
+}
+@media (max-width:516px) {
+    .sidemenu{
+        display: block;
+        padding: 20px;
+
+    }
+    .menu{
+        display: none;
+    }
 
 }
+
 .row img{
     padding: 5px;
+}
+@media (max-width:526px) {
+    .menu2 {
+       display: none;
+   }
+   .navbar {
+       position: relative;
+   }
+
+   .n {
+       width: 40px;
+   }
+   .n .search{
+       width: 20px;
+   }
+   .newscontenu {
+       margin-top: 5em;
+       width: 100%;
+       display: block;
+       left: 0;
+       top: 0;
+   }
 }
