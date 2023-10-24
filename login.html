@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="kk"> 
+
+<body class="kk">
     <section class="main">
-      <div class="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="logo" >
-        </div>
-        <div class="menu">
-            <a href="index.html"><button class="btn">Home</button></a>
-            <a href="news.html"><button class="btn">News</button></a>
-            <a href="#"><button class="btn">Reviews</button></a>
-            <a href="games.html"><button class="btn">Games</button></a>
-        </div>
-    </section>    
-  
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <a href="index.html"><button class="btn">Home</button></a>
+                <a href="news.html"><button class="btn">News</button></a>
+                <a href="#"><button class="btn">Reviews</button></a>
+                <a href="games.html"><button class="btn">Games</button></a>
+            </div>
+            <div class="sidemenu">
+                <i class="fa-solid fa-bars" style="color: #808080;"></i>
+
+                <div class="menu3">
+                    <a href="index.html"><button class="btn">Home</button></a>
+                    <a href="news.html"><button class="btn">News</button></a>
+                    <a href="#"><button class="btn">Reviews</button></a>
+                    <a href="games.html"><button class="btn">Games</button></a>
+                </div>
+            </div>
+    </section>
+
     <div class="lg">
-        <form action="">
-            <h1>Login</h1>
+
+        <form class="forme" action="">
+            <div class="loginform">
+                <h1>Login</h1>
+            </div>
             <div class="input-form">
-               <input type="email" placeholder="Email"
-               required>
-               <i class='bx bx-envelope'></i>
+                <input type="email" placeholder="Email">
+                <i class='bx bx-envelope'></i>
             </div>
 
             <div class="input-form">
-                <input type="password" placeholder="password" 
-               required>
-               <i class='bx bx-lock-alt' ></i>
+                <input type="password" placeholder="Password">
+                <i class='bx bx-lock-alt'></i>
             </div>
 
             <div class="remember">
-                <label><input type="checkbox">Remember me</label>
-                <a href="#">Forget password</a>
+                <label><input class="checkbox" type="checkbox">Remember me</label>
             </div>
+            <button type="text" class="buton">Login</button>
+            <a class="loginbtn" href="signup.html">Sign up</a>
 
-            <button type="submit" class="buton">Login</button>
-            
-            <div class="register">
-                <p>Dont have an account?<a href="#">Register</a></p>
-
-            </div>
 
         </form>
     </div>
