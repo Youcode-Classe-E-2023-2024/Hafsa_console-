@@ -97,7 +97,6 @@ body {
     color: #000000;
 }
 
-
 .lg h1{
     width: 50%;
     text-align: center;
@@ -116,6 +115,7 @@ body {
     color: #000000;
    
 }
+
 .remember{
     display: flex;
     align-items: center;
@@ -460,8 +460,6 @@ footer section {
         padding: 1em;
     }
     
-   
-
     .profil2 {
         display: flex;
         flex-direction: column;
@@ -480,7 +478,17 @@ footer section {
     .menu2 {
         display: none;
     }
-    
+
+    .forme{
+    width: 350px;
+    height: auto;
+    margin: 30px 0;
+
+    }
+    .input-form input{
+        width: 70%;
+        height: 90%;
+    }
 
 }
 
@@ -544,6 +552,10 @@ footer section {
 
     .sidebarmobile {
         display: block;
+    }
+    .forme{
+        margin-right: 2em;
+        padding: 4em;
     }
 
 }
@@ -824,6 +836,7 @@ footer section {
     color: white;
 
 }
+
 
 .news {
     font-weight: bolder;
