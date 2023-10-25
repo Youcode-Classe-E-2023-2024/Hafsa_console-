@@ -393,6 +393,7 @@ footer section {
     align-items: center;
 }
 
+
 @media (max-width:960px) {
     .navbar.menu {
         display: flex;
@@ -459,9 +460,7 @@ footer section {
         padding: 1em;
     }
     
-    .news {
-        text-align: center;
-    }
+   
 
     .profil2 {
         display: flex;
@@ -493,7 +492,6 @@ footer section {
 }
 @media (max-width:1024px) {
    
-    
     .ss {
         width: 90%;
         padding: 1em;
@@ -816,18 +814,23 @@ footer section {
 .newscontenu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     width: 100%;
     height: auto;
     color: #D0C3C3;
+}
+.titles{
+    color: white;
+
 }
 
 .news {
     font-weight: bolder;
     color: #C75757;
-    font-size: x-large;
+    font-size: 50px;
     text-align: center;
+    padding-top: 50px;
 }
 
 .titles {
@@ -869,10 +872,33 @@ footer section {
     float: left;
     width: 100%;
 }
+.profil3 img{
+    width: 100%;
+    height: auto;
+    
 
-
-
-
+}
+@media (max-width:1256px) {
+    
+    .profil3 img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .profil3{
+        width: 95%;
+    }
+    .wepons{
+            row-gap: 20px   ;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 1%;
+          
+    }
+    
+}
 
 @media (min-width: 1601px) {
     .col.m1 {
@@ -929,25 +955,7 @@ footer section {
         width: 24%
     }
 }
-@media (max-width:1215px) {
-    /* .remove{
-        display: none;
-    } */
-    .profil3{
-        margin: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .diablotext{
-        width: 100%;
-        padding-left: 0em;
-        padding-right: 0em;
-    }
-    .footerimg{
-        width: 740px;
-        height: auto;
-    }
-}
+
 
 @media (max-width:1090px) {
     .col.m3 {
@@ -1053,29 +1061,58 @@ footer section {
    }
 
 }
+@media (max-width: 768px) {
+    .review-container {
+        padding: 10px;
+    }
+}
     .row img{
     padding: 5px;
 }
-/* .diablotext{
+
+.diablotext{
     width: 100%;
-    padding-left: 20em;
-    padding-right: 10em;
- 
+    /* padding-left: 20em;
+    padding-right: 10em; */
 }
 .wepons{
-    width: 80%;
+    width: 100%;
+    
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     margin: 1%;
+  
+}
+.wepons img{
+    width: 25%;
+}
+.news{
+    text-align: center;
+}
+.profil3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0em 20em;
 }
 
+
+.profil3{
+    width: 934px;
+    margin: auto;
+}
+@media (max-width:1214px) {
+    
+}
 .profil3 p{
     width: 100%;
     height: auto;
     color: rgb(236, 236, 236);
     font-size: x-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 .Diablotitre{
     font-size: xx-large;
@@ -1092,4 +1129,89 @@ footer section {
     font-size: x-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: underline;
-} */
+}
+
+.ss {
+    width: 90%;
+    padding: 1em;
+    text-align: center; 
+}
+
+.titles {
+    font-weight: bold; 
+    font-size: 24px;
+}
+/* .sss h1, p{
+    /* padding:0 200px 0 0; */
+
+/* .news{
+    padding-top: 40px;
+    font-size: 50px;
+    text-align: start;
+    
+
+} */ 
+
+
+.reviewbody {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.review-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.review p {
+    color: #666;
+}
+@media (max-width:1215px) {
+    /* .remove{
+        display: none;
+    } */
+    .profil3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .diablotext{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .footerimg{
+        width: 740px;
+        height: auto;
+    }
+}
+@media (max-width:950px) {
+    .profil3{
+        width: 95%;
+        height: auto;
+    }
+    .wepons img{
+        width:45%;
+    }
+}
